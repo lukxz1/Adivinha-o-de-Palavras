@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Jogo de Adivinhação de Palavras</title>
+</head>
+<body>
+  <h1>Jogo da advinhação</h1>
+  
+
+  <h3>Escolha um gênero</h3>
+
+  <div id="botoesGenero" class="botoes-genero">
+    <button onclick="escolherGenero('frutas')">Frutas</button>
+    <button onclick="escolherGenero('animais')">Animais</button>
+    <button onclick="escolherGenero('países')">Países</button>
+    <button onclick="escolherGenero('profissões')">Profissões</button>
+    <p id="escolherGenero"></p>
+  </div>
+
+  <button id="inicio" onclick="iniciarJogo()" >Iniciar Jogo</button>
+
+  <p id="pergunta"></p>
+  <input type="text" id="resposta" placeholder="Digite sua resposta">
+  <button onclick="verificarResposta()">Verificar Resposta</button>
+
+  <div id="info">
+    <p id="dicas"></p>
+    <p id="quantidade-letras"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+  <footer>
+    <p>Desenvolvido por [mateus Gomes e Lucas Lohan ]</p>
+    <p>&copy; 2025</p>
+</html>

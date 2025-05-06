@@ -1,0 +1,145 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #21222c, #3841f0);
+    animation: fadeInBody 1s ease-in;
+    min-height: 100vh;
+  }
+  
+  @keyframes fadeInBody {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideDown {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes slideInRightToLeft {
+    from {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulseGlow {
+    0% { box-shadow: 0 0 5px #ffffff; }
+    50% { box-shadow: 0 0 15px #ffffff; }
+    100% { box-shadow: 0 0 5px #ffffff; }
+  }
+  
+  h1 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 40px;
+    animation: slideInRightToLeft 1s ease;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #3841f0;
+  }
+  
+  button {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:hover {
+    background-color: #ec6dcf50;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ec6dcf, 0 0 20px #ec6dcf, 0 0 30px #ec6dcf;
+  }
+  
+  .botoes-genero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    animation: slideInRightToLeft 1.2s ease;
+  }
+  
+  .botoes-genero button {
+    margin: 12px 0;
+    width: 240px;
+    animation: slideInRightToLeft 1.3s ease;
+  }
+  
+  /* Removidos os delays dos botões "Animais" e "Cores" */
+  
+  #inicio {
+    color: #797fe6;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    animation: slideInRightToLeft 1.3s ease;
+  }
+  
+  #pergunta {
+    font-size: 26px;
+    color: #ffffff;
+    margin-top: 30px;
+    animation: slideInRightToLeft 1.4s ease;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #3841f0;
+  }
+  
+  #resposta {
+    padding: 12px;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 320px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    transition: box-shadow 0.3s ease;
+    animation: slideInRightToLeft 1.5s ease, pulseGlow 2s infinite ease-in-out;
+  }
+  
+  #resposta:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0 0 8px #ffffff;
+  }
+  
+  #info {
+    margin-top: 30px;
+    color: #fff;
+    animation: slideInRightToLeft 1.6s ease;
+  }
+  
+  #dicas {
+    font-size: 18px;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+    animation: slideInRightToLeft 1.7s ease;
+  }
+  
+  #quantidade-letras {
+    font-size: 16px;
+    color: #cccccc;
+    animation: slideInRightToLeft 1.8s ease;
+  }
+  .botoes-genero button.selecionado {
+    background-color: #ec6dcf;
+    color: #000;
+    transform: scale(1.08);
+    box-shadow: 0 0 15px #ec6dcf, 0 0 25px #ec6dcf;
+  }
+  
